@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>WP1 Model_Leuven </title>
+    <link href="css/Model_luwen.css" type="text/css" rel="stylesheet" />
+    <script type="text/x-mathjax-config">  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </head>
+    
+    <!---------------------------------------------------------------------------->
+    <body>
+        <div id='main_container'>
+            
+            <div id="side">
+                <div id='main_nav'>
+                <ul class='Top_nav' id="Home_nav" >
+                
+                 <li class="NavButton" id='safety_button' >
+                     <a href="Safety_bio%20safety.html">Safety</a>
+                  </li>
+                    
+                 <li class='NavButton' id='HP_button' >
+                     <a>Human Practice</a>
+                     
+                     <div class="sub_nav" id='HP_nav'>
+                         <ul class="sub_menu" id='HP_menu'>
+                             <li><a href="HP_IntergratedHP.html">Intergrated Human Practice</a></li>
+                             <li><a href="HP_Edu&Pulic.html">Education & Public Engagement</a></li>
+                                 
+                         </ul>
+                     </div>
+                     
+                </li>
+                    
+                 <li class='NavButton' id='Parts_button'>
+                     <a>Parts</a>
+                     
+                     <div class="sub_nav" id='Parts_nav'>
+                         <ul class='sub_menu' id='Parts_menu'>
+                             <li><a href="Parts_Software.html">Software</a></li>
+                             <li><a href="Parts_Something%20else.html">Something else</a></li>
+                         </ul>
+                     </div>
+                     
+                </li>
+                    
+                 <li class='NavButton' id="Model_button" >
+                     <a>Model</a>
+                     
+                     <div class="sub_nav" id='Model_nav'>
+                         <ul class='sub_menu' id='Model_menu'>
+                             <li><a href="Model_WP.html">Winter Project</a></li>
+                             <li><a href="Model_university%20of%20leuven.html">Unversity of Leuven</a></li>
+                         </ul>
+                     </div>
+                     
+                </li>
+                 <li class='NavButton' id='Project_button' >
+                     <a>Project</a>
+                     
+                     <div class="sub_nav" id=Project_nav>
+                         <ul class='sub_menu' id='Project_menu'>
+                             <li><a href="Project_description.html">Description</a></li>
+                             <li><a href="Project_design.html">Design</a></li>
+                         </ul>
+                     </div>
+                     
+                    </li>
+                    
+                 <li class='NavButton' id='Team_button' >
+                     <a href="Team.html" target="_blank">Team</a>
+                     
+                       <div class="sub_nav" id="Team_nav">
+                         <ul class='sub_menu' id='Team_menu'>
+                             <li><a href="Team_members.html">Members</a></li>
+                             <li><a href="Team_attributions.html">Attribution</a></li>
+                         </ul>
+                       </div>
+                     
+                </li>
+                <li class='NavButton' ><a href="Home.html" target="_self">Home</a></li>
+            
+                </ul>
+                    <a><img src="image/nav_button.gif" id='nav_icon' align='left'  onclick="(Control('Home_nav'))"></a>
+                </div>
+                
+                <div id='side_logo'><img src="image/new_logo.png" id="logo"/>
+                </div>
+                
+                <div id='side_title'><p style="font-size: 65px; font-weight: 600; color: #d9d9d9; Writing-mode:tb-rl; padding: 0px;margin: 0px;">MODEL</div>
+                
+            </div>
+                <!------------------------------------左侧固定栏----------------------------------------->
+                
+          <div class='main_content' id='Home_main_content'>
+                
+            <!--<div class='header' id='Home_header'>
+                    <div class='t1' id='t2' onclick="(dd(-1))"></div>
+                    <div class='t1' id='t3' onclick="(dd(1))"></div>
+                </div>--------->
+                <!------------------------------------主页图啥的---------------------------------------------->
+            
+            <div id='slide_content'>
+                    
+                <div id='slide_container'>
+                        
+                        <div class='content' id='content1'>
+                            <h1 class='Title'>Overview</h1>
+                            <p class="article_words">The part of cell A in the internal model of University of Leuven is mainly to simulate the concentration of leucine and AHL in and out of cells.</p>
+                            <p class='article_words'>Cell A uses E.coli cells that knock out <em>tar</em> and <em>tsr</em>, so that they are not sensitive to leucine. The recombinant plasmid is introduced into cell A, which contains three expression systems:</p>
+                            <ul>
+                                <li>cl repressor expression system</li>
+                                <li>AHL enzyme expression system</li>
+                                <li>transaminase B expression system and leucine production system</li>
+                            </ul>
+                            <div class="pic_notes" id="pic1">
+                            <img src="image/Model_Leuven_pic1.png" />
+                                <p>pic1.Cell A System</p>
+                            </div>
+                            <p class="article_words">The specific expression process mainly include transcription, translation, complexation and oligomerization kinetics, protein production kinetics, degradation and diffusion.</p>
+                        </div>
+                        
+                        <div class="content" id="content2">
+                            <h1 class="Title">Following Systems</h1>
+                            <h2 class="S_title">1)	cl repressor protein expression system</h2>
+                            <p class="article_words">The repressor characteristics of cl protein are related to temperature, when it is higher than a specific temperature the repressor can’t combine to DNAs thus there’s no repression occurring. The system uses constitutive promoters, so the transcription rate is only related to the type of promoters. After transcripting into cl-mRNA, it starts to translate into cl protein, which needs to be polymerized to form [Cl]<sub>2</sub> to act as the repressor.</p>
+                            <h2 class="S_title">2) AHL enzyme expression system</h2>
+                            <p class="article_words">The system uses λ promoter to control transcription, which is repressed by [Cl]<sub>2</sub> when the temperature is lower than the specific temperature, so Hill function is used to simulate the transcription rate before and after inhibition. <em>LuxI</em> controlled by the promoter can catalyze the production of AHL after transcription and translation, and AHL can permeate out of the cells to play a role. After transcription and translation, <em>LuxR</em> forms heterodimer with AHL,and then complexes to form tetramer [LuxR/AHL]<sub>2</sub>, which can be used to activate the transaminase B expression system.</p>
+                            <h2 class="S_title">3) Transaminase B expression system and leucine production system: </h2>
+                            <p class="article_words">This system uses LuxR promoter to start transcription, and after the transcription and translation of <em>ilvE</em>, transaminase B can further catalyze various biochemical reactions of glutamic and other substances in the system to produce leucine, and leucine penetrates into the extracellular system to play a role. The products of <em>Ag43</em>-YFP transcription and translation are mainly related to cell aggregation and it can make the cells show yellow fluorescence.</p>
+                        </div>
+                        
+                        <div class="content" id="content3">
+                            <h1 class="Title">Methods&Results</h1>
+                            
+
+
+                            <p class="article_words">The following 24 ordinary differential equations are obtained, and the following results are obtained by ode45 method:</p>
+                            <div class='pic_notes' id='pic2'>
+                                <img src="image/Model_Leuven_pic2.png" />
+                                <p>pic2.Simulation of all processes in Cell A in ON and OFF state</p>
+                            </div>
+                                <p>
+                                    $$\begin{align}
+                                    \frac{{\large d} m_{cI}}{d t} =& \alpha_1 {\cdot} cI_{gene} - d_{mCI} {\cdot} m_{cI} \\
+                                    \frac{{\large d}{cI}}{d t} =& \beta_{cI} {\cdot} {m_{cI}} -2 {\cdot} {k_{cI,dim}} {\cdot} {cI}^2 + 2 {\cdot}    {k_{-cI,dim}}{\cdot} {[cI]_2} - d_{cI} {\cdot} {cI} \\
+                                    \frac{{\large d}{[cI]_2}}{d t}=& k_{cI,dim} {\cdot} {cI}^2 - {k_{-cI,dim}}{\cdot} {[cI]_2} \\
+                                    \frac{{\large d} m_{LuxI}}{d t} =& (L_{lambda} + {\frac{\alpha_{lambda}}{1 + ({\frac{[cI]_2}{K_{d1}}})^{n_{cI}}}}) {\cdot} LuxI_{gene} - d_{mLuxI} {\cdot} m_{LuxI} \\
+                                    \frac{{\large d} m_{LuxR}}{d t} =& (L_{lambda} + {\frac{\alpha_{lambda}}{1 + ({\frac{[cI]_2}{K_{d1}}})^{n_{cI}}}}) {\cdot} LuxR_{gene} - d_{mLuxR} {\cdot} m_{LuxR} \\
+                                    \frac{{\large d} LuxI}{d t} =& \beta_{LuxI} {\cdot} {m_{LuxI}} - d_{LuxI} {\cdot}{LuxI} \\
+                                    \frac{{\large d} LuxR}{d t} =& \beta_{LuxR} {\cdot} {m_{LuxR}} -k_{lux,as} {\cdot}{LuxR}{\cdot}{AHL_{in}} + k_{lux,dis}{\cdot}{[LuxR/AHL]} - d_{LuxR} {\cdot}{LuxR} \\
+                                    \frac{{\large d} AHL_{in}}{d t} =& {k_{luxI}} {\cdot} {luxI} - k_{lux,as} {\cdot}{luxR}{\cdot}{AHL_{in}} + k_{lux,dis}{\cdot}{[luxR/AHL]} \\\\& + ( {D_{IN,AHL}} {\cdot} {AHL_{out}} {\cdot}\frac{{V_{cell}}}{V_{external,AHL}} - {D_{OUT,AHL}} {\cdot} {AHL_{in}} ) - d_{AHL,in} {\cdot} {AHL_{in}} \\
+                                    \frac{{\large d} AHL_{out}}{d t} =& ( {D_{OUT,AHL}} {\cdot} {AHL_{in}} {\cdot}\frac{V_{external,AHL}}{{V_{cell}}} \\\\&-{D_{IN,AHL}}{\cdot}{AHL_{out}} ) -d_{AHL,out}{\cdot}{AHL_{out}} \\
+                                    \frac{{\large d} [luxR/AHL]}{d t} =& k_{lux,as} {\cdot}{luxR}{\cdot}{AHL_{in}} - k_{lux,dis}{\cdot}{[luxR/AHL]} - 2 {\cdot} k_{lux,dim} {\cdot}{[luxR/AHL]^2} + 2 {\cdot}{k_{-lux,dim}}{\cdot}{[luxR/AHL]_{2}} \\
+                                    \frac{{\large d} [luxR/AHL]_{2}}{d t} =& k_{lux,dim} {\cdot}{[luxR/AHL]^2} - k_{- lux,dim} {[luxR/AHL]} \\
+                                    \frac{{\large d} m_{ilvE}}{d t} =& (L_{lux} + \frac{\alpha_{lux}}{1+(\frac{K_{d2}}{[luxR/AHL]_{2}})^{n_{lux}}} ) {\cdot} ilvE_{gene} - d_{milvE} {\cdot} {m_{ilvE}} \\
+                                    \frac{{\large d} m_{Ag43}}{d t} =& (L_{lux} + \frac{\alpha_{lux}}{1+(\frac{K_{d2}}{luxR/AHL]_{2}})^{n_{lux}}} ) {\cdot} Ag43_{gene} - d_{mAg43} {\cdot} {m_{Ag43}} \\
+                                    \frac{{\large d} Ag43}{d t} =& \beta_{Ag43} {\cdot} {m_{Ag43}} - d_{Ag43} {\cdot} {Ag43} \\
+                                    \frac{{\large d} Transaminase B}{d t} =&  \beta_{TB} {\cdot} {m_{ilvE}} - kf_1 {\cdot} {Transaminase B} {\cdot}{Glutamate}  + kf_{-1}{\cdot}{[TB-GLU]}  \\&- kr_1 {\cdot}{Leucine_{in}}{\cdot}{Transaminase B} + kr_{-1}{\cdot}{TB-Leu} + kcat2{\cdot}{[{TBNH}_2-aKIC]} \\&+ kcat4{\cdot}{[{TBNH}_2-aKG]} + k_{production} - d_{TB} {\cdot} {Transaminase B} \\
+                                    \frac{{\large d}{[TB-GLU]}}{d t}=& -{kcat1}{\cdot}{[TB-GLU]} + {kf}_{1}{\cdot}{TB}{\cdot}{Glu} - {kf}_{-1}{\cdot}{[TB-GLU]} \\
+
+                                    \frac{{\large d}{[{TBNH}_2]}}{d t}=&  {kcat1}{\cdot}{[TB-GLU]} + {kcat3}{\cdot}{[TB-Leu]}- {kf}_{2}{\cdot}{{TBNH}_2}{\cdot}{aKIC} + {kf}_{-2}{\cdot}{[{TBNH}_2-aKIC]} \\ & - {kr}_2{\cdot}{{TBNH}_2}{\cdot}{aKG} +{kr}_{2}{\cdot}{[{TBNH}_2-aKG]} \\
+                                    \frac{{\large d}{[{TBNH}_2-aKIC]}}{d t}=& -{kcat2}{\cdot}{[{TBNH}_2-aKIC]} + {kf}_{2}{\cdot}{{TBNH}_2}{\cdot}{aKIC} - {kf}_{-2}{\cdot}{[{TBNH}_2-aKIC]} \\
+                                    \frac{{\large d}{[TB-Leu]}}{d t}=& {kr}_1{\cdot}{Leucine}_{in}{\cdot}{[TB-GLU]} - {kr}_{-1}{\cdot}{[TB-Leu]} - {kcat3}{\cdot}{[TB-Leu]}  \\
+                                    \frac{{\large d}{[{TBNH}_2-aKG]}}{d t}=& {kr}_2{\cdot}{{TBNH}_2}{\cdot}{aKG} - {kr}_{2}{\cdot}{[{TBNH}_2-aKG]} - {kcat4}{\cdot}{[{TBNH}_2-aKG]} \\
+                                    \frac{{\large d}{Leucine_{in}}}{d t}=&{kcat2}{\cdot}{[{TBNH}_2-aKIC]} - {kr}_1 {\cdot}{Leucine_{in}}{\cdot}{Transaminase B} + {kr}_{-1}{\cdot}{[TB-Leu]} \\&- d_{Leu}{\cdot}{Leucine_{in}} - {D_{OUT,Leu}}{\cdot}{Leucine_{in}} + {D_{IN,Leu}}{\cdot}{Leucine_{out}}{\cdot}\frac{{V_{cell}}}{V_{external,leu}} \\
+                                    \frac{{\large d} Leucine_{out}}{d t} =& (D_{OUT,Leu} {\cdot}{leucine_{in}}{\cdot}\frac{V_{external,leu}}{{V_{cell}}} - D_{IN,Leu} {\cdot}{leucine_{out}}) - d_{Leu,out} {\cdot} {Leucine_{out}} \\
+                                    \frac{{\large d} V_{external,AHL}}{d t} =& \frac{2{\cdot}\pi{\cdot}D_{AHL}}{\sqrt{2{\cdot}D{\cdot}t}}{\cdot}{(\sqrt{2{\cdot}D{\cdot}t} + r_0)^2}\\
+                                    \frac{{\large d} V_{external,Leu}}{d t} =& \frac{2{\cdot}\pi{\cdot}D_{Leu}}{\sqrt{2{\cdot}D{\cdot}t}}{\cdot}{(\sqrt{2{\cdot}D{\cdot}t} + r_0)^2}
+                                    \end{align}$$
+                                </p>
+                            
+                        </div>
+                        
+                        <div class="content" id="content4">
+                            <h1 class="Title">Parameters</h1>
+                            <div id='parameters'>
+                                <p>Figure1.Parameters</p>
+                            <table >
+                                <tr>
+                                    <th>name</th>
+                                    <th>value</th>
+                                    <th>unit</th>
+                                </tr>
+                                <tr>
+                                    <td>cI<sub>gene</sub></td>
+                                    <td>200</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>mcI</sub></td>
+                                    <td>0.002665</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>β<sub>cI</sub></td>
+                                    <td>0.35</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>K<sub>Z</sub></td>
+                                    <td>0.00174</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>k<sub>-cl,dim</sub></td>
+                                    <td>0.01</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>cI</sub></td>
+                                    <td>0.00288</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>L<sub>lambda</sub></td>
+                                    <td>3.077×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>α<sub>lambda</sub></td>
+                                    <td>0.0394</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>K<sub>dI</sub></td>
+                                    <td>20</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>n<sub>cI</sub></td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>LuxI<sub>gene</sub></td>
+                                    <td>200</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>mLuxI</sub></td>
+                                    <td>0.006</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>LuxR<sub>gene</sub></td>
+                                    <td>200</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>mLuxR</sub></td>
+                                    <td>0.006</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>β<sub>LuxI</sub></td>
+                                    <td>0.016</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>LuxI</sub></td>
+                                    <td>5×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>β<sub>LuxR</sub></td>
+                                    <td>0.016</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>k<sub>lux,as</sub></td>
+                                    <td>1×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>k<sub>lux,dis</sub></td>
+                                    <td>0.016667</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>D<sub>IN,AHL</sub></td>
+                                    <td>0.23</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>D<sub>OUT,AHL</sub></td>
+                                    <td>0.23</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>AHL,in</sub></td>
+                                    <td>1.667×10^(-4)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>AHL,out</sub></td>
+                                    <td>1.155×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>k<sub>lux,dim</sub></td>
+                                    <td>1×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>k<sub>-lux,dim</sub></td>
+                                    <td>0.01</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>L<sub>lux</sub></td>
+                                    <td>3.077×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>α<sub>1</sub></td>
+                                    <td>0.00429</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>α<sub>lux</sub></td>
+                                    <td>0.00169</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>K<sub>d2</sub></td>
+                                    <td>3.7</td>
+                                    <td>1</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>n<sub>lux</sub></td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>ilvE<sub>gene</sub></td>
+                                    <td>200</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>milvE</sub></td>
+                                    <td>0.00304</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>Ag43<sub>gene</sub></td>
+                                    <td>200</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>mAg43</sub></td>
+                                    <td>0.00186</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>β<sub>Ag43</sub></td>
+                                    <td>0.0020</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>Ag43</sub></td>
+                                    <td>2.84×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>β<sub>TB</sub></td>
+                                    <td>0.13</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kf<sub>1</sub></td>
+                                    <td>0.0098</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kf<sub>-1</sub></td>
+                                    <td>3300</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kf<sub>2</sub></td>
+                                    <td>0.0882</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kf<sub>-2</sub></td>
+                                    <td>0.5940</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kr<sub>1</sub></td>
+                                    <td>0.0031184</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kr<sub>-1</sub></td>
+                                    <td>4620</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kr<sub>2</sub></td>
+                                    <td>0.0041161</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kr<sub>-2</sub></td>
+                                    <td>3465</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kcat<sub>1</sub></td>
+                                    <td>33.33</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kcat<sub>2</sub></td>
+                                    <td>60</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kcat<sub>3</sub></td>
+                                    <td>46.67</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>kcat<sub>4</sub></td>
+                                    <td>35</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>k<sub>1production</sub></td>
+                                    <td>0.0033</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>TB</sub></td>
+                                    <td>4.5</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>Leu</sub></td>
+                                    <td>0.0167</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>D<sub>OUT,Leu</sub></td>
+                                    <td>0.0005</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>D<sub>IN,Leu</sub></td>
+                                    <td>0.05</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>leu,out</sub></td>
+                                    <td>0.000333</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>D<sub>AHL</sub></td>
+                                    <td>7×10^(-9)</td>
+                                    <td>dm<sup>2</sup>/s</td>
+                                </tr>
+                                <tr>
+                                    <td>D<sub>Leu</sub></td>
+                                    <td>6.57×10^(-9)</td>
+                                    <td>dm<sup>2</sup>/s</td>
+                                </tr>
+                                <tr>
+                                    <td>V<sub>cell</sub></td>
+                                    <td>5.7×10^(-16)</td>
+                                    <td>dm<sup>3</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>R<sub>0</sub></td>
+                                    <td>5.128×10^(-6)</td>
+                                    <td>dm</td>
+                                </tr>
+                            </table>
+                                
+                            </div>
+                            
+                            <p class="article_words">Because of the assumption that the substrate pool can not be depleted and the concentration (or amount of molecules) of substrate in the cell is constant，we assume the content of glutamate is 100000, and the content of aKIC and aKG is 1000 in the model.</p>
+                            <p class="article_words">There are Cl and [Cl]<sub>2</sub> in the initial system, otherwise, part of the calculation will be meaningless. In the modeling, the cl content is 500, [Cl]<sub>2</sub> content is 615000.</p>
+                            <p class="article_words">For the same reason, the initial time can’t be zero, so we use 1×10<sup>-20</sup> instead.</p>
+                        </div>
+           
+              </div>
+                <!-------------------------------------滑动栏--------------------------------------------------->
+                <div id="Leuven_nav">
+                    <ul>University Of Leuven
+                        <li><a href="#content1" id='n1'>Overview&emsp;&emsp;&emsp;&emsp;</a></li>
+                        <li><a href="#content2" id="n2">Following Systems</a></li>
+                        <li><a href="#content3" id="n3">Methods&Results</a></li>
+                        <li><a href="#content4" id="n4">Parameters</a></li>
+                    </ul>
+                </div>
+                <!--------------------------------------项目各部分描述-------------------------------------------------------->
+                
+            </div>
+            <!-------------------------------------主要内容------------------------------------------->
+            
+            
+        </div>
+             <div class='footer' id='footer'>
+                <div id="Sponsors" >
+                       <img src="image/bqb/angry.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/ssfd.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/sos.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/nice.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/jiumi.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/dldl.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                   </div>
+                   
+                   <div id='Contact'>
+                       <p>QQ Group Number:1001827182</p>
+                   </div>
+                   
+                   <div id="Copyright">
+                       <p>Copyright@ZJU_Mingxiao Wei's BIG BIG FATHER</p>
+                   </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+    </body>
+    
+    
+</html>
+
+
+<script type="text/javascript">
+    mounted () {
+    this.$nextTick(function() {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    });
+  }
+</script>
+
+<script>
+    function Control(sth){
+    obj=document.getElementById(sth);
+    if (obj.style.width=="0px"){
+        obj.style.width='950px';
+        setTimeout(function(){
+            document.getElementById('Home_nav').style.overflow="visible";
+        },2000);
+    } else {
+        obj.style.width='0px';
+        obj.style.overflow='hidden';
+    }
+}
+    window.onload=function(){
+        document.getElementById('Home_nav').style.width='0px';
+    }
+</script>

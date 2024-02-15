@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>WP1 WP </title>
+    <link href="css/Model_WP.css" type="text/css" rel="stylesheet" />
+    <script type="text/x-mathjax-config">  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </head>
+    
+    <!---------------------------------------------------------------------------->
+    <body>
+        <div id='main_container'>
+            
+            <div id="side">
+                <div id='main_nav'>
+                <ul class='Top_nav' id="Home_nav" >
+                
+                 <li class="NavButton" id='safety_button' >
+                     <a href="Safety_bio%20safety.html">Safety</a>
+                  </li>
+                    
+                 <li class='NavButton' id='HP_button' >
+                     <a>Human Practice</a>
+                     
+                     <div class="sub_nav" id='HP_nav'>
+                         <ul class="sub_menu" id='HP_menu'>
+                             <li><a href="HP_IntergratedHP.html">Intergrated Human Practice</a></li>
+                             <li><a href="HP_Edu&Pulic.html">Education & Public Engagement</a></li>
+                                 
+                         </ul>
+                     </div>
+                     
+                </li>
+                    
+                 <li class='NavButton' id='Parts_button'>
+                     <a>Parts</a>
+                     
+                     <div class="sub_nav" id='Parts_nav'>
+                         <ul class='sub_menu' id='Parts_menu'>
+                             <li><a href="Parts_Software.html">Software</a></li>
+                             <li><a href="Parts_Something%20else.html">Something else</a></li>
+                         </ul>
+                     </div>
+                     
+                </li>
+                    
+                 <li class='NavButton' id="Model_button" >
+                     <a>Model</a>
+                     
+                     <div class="sub_nav" id='Model_nav'>
+                         <ul class='sub_menu' id='Model_menu'>
+                             <li><a href="Model_WP.html">Winter Project</a></li>
+                             <li><a href="Model_university%20of%20leuven.html">Unversity of Leuven</a></li>
+                         </ul>
+                     </div>
+                     
+                </li>
+                 <li class='NavButton' id='Project_button' >
+                     <a>Project</a>
+                     
+                     <div class="sub_nav" id=Project_nav>
+                         <ul class='sub_menu' id='Project_menu'>
+                             <li><a href="Project_description.html">Description</a></li>
+                             <li><a href="Project_design.html">Design</a></li>
+                         </ul>
+                     </div>
+                     
+                    </li>
+                    
+                 <li class='NavButton' id='Team_button' >
+                     <a href="Team.html" target="_blank">Team</a>
+                     
+                       <div class="sub_nav" id="Team_nav">
+                         <ul class='sub_menu' id='Team_menu'>
+                             <li><a href="Team_members.html">Members</a></li>
+                             <li><a href="Team_attributions.html">Attribution</a></li>
+                         </ul>
+                       </div>
+                     
+                </li>
+                <li class='NavButton' ><a href="Home.html" target="_self">Home</a></li>
+            
+                </ul>
+                    <a><img src="image/nav_button.gif" id='nav_icon' align='left'  onclick="(Control('Home_nav'))"></a>
+                </div>
+                
+                <div id='side_logo'><img src="image/new_logo.png" id="logo"/>
+                </div>
+                
+                <div id='side_title'><p style="font-size: 65px; font-weight: 600; color: #d9d9d9; Writing-mode:tb-rl; padding: 0px;margin: 0px;">MODEL</div>
+                
+            </div>
+                <!------------------------------------左侧固定栏----------------------------------------->
+                
+          <div class='main_content' id='Home_main_content'>
+                
+            <!--<div class='header' id='Home_header'>
+                    <div class='t1' id='t2' onclick="(dd(-1))"></div>
+                    <div class='t1' id='t3' onclick="(dd(1))"></div>
+                </div>--------->
+                <!------------------------------------主页图啥的---------------------------------------------->
+            
+            <div id='slide_content'>
+                    
+                <div id='slide_container'>
+                        
+                        <div class='content' id='content1'>
+                            <h1 class='Title'>Overview</h1>
+                            <p class="article_words">In order to learn about the metabolic expression of Salmonella after conjugation and the killing effect of bacteria, the two parts were modeled respectively:</p>
+                            <ul>
+                                <li>Internal</li>
+                                <li>External</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="content" id="content2">
+                            <h1 class="Title">Internal</h1>
+
+                            <p class="article_words">The metabolism of Salmonella after successful conjugation mainly includes transcription, translation, splicing of DnaE and degradation. We use a top-down approach to find the balance of this process.</p>
+                            <div class="pic_notes">
+                                <img src="image/Genetic%20Circuit2.png" />
+                                <p>pic1.Salmonella Genetic Circuit</p>
+                            </div>
+                            <p class="article_words">This model mainly includes two parts, one is the control system of Salmonella species specificity and tetracycline resistance specificity, the other is the expression system of ortT.</p>
+                            <p class="article_words">1) Specific control system: T7 RNase can only start transcription in cells with tetracycline resistant gene, while T3 RNase can only start transcription in Salmonella cells which has SsrB in their cells.</p>
+                            <p class="article_words">2) OrtT expression system: T7 RNase starts the transcription of the N-terminal of toxin protein OrtT and peptide linker DnaE, while T3 RNase starts the transcription of the C-terminal of toxin protein OrtT and peptide linker DnaE. They are translated and then further splices to form mature OrtT.</p>
+                            
+                            <h2 class="S_itle">Parameter Estimation</h2>
+                            <b>Transcription:</b>
+                            <p class="article_words">Generally, the transcription rate is 500～4000bp / min, while T7 RNase gene is 2751bp, T3 RNase is 2652bp, OrtT-N with DnaE-N is 447bp, DnaE-C with OrtT-C is 195bp. Based on this, it is roughly estimated that the transcription rate of T7 RNase and T3RNase is 0.02/s, that of OrtT-N is 0.029/s, and that of OrtT-C is 0.067/s</p>
+                            <p class="article_words">Because T7 promoter needs to combine with T7 RNase to initiate transcription, T3 promoter also needs to combine with T3 RNase to initiate transcription, Hill function is used to simulate the interaction of DNA and T7 RNase during the process.${\theta} = \frac{{[L]}^n}{{K_d}^n + [L]^n} = \frac{1}{1+(\frac{K_{d}}{[L]})^{n}}$</p>
+                            <p class="article_words">As T3 RNase and T7 RNase are activators, we are interested in how much of the DNA is bound and active:$\frac{1}{1+(\frac{K_{d}}{[Activator]})^{n}}$ .Here we estimate Kd as 3.7, n as 1.</p>
+                            <p class="article_words">A shutdown promoter still has a very small transcription which is called the leakiness of the promoter. In our model the leakiness rate is estimated to be 3.077×10^(-5)/s.</p>
+                            <p class="article_words">Translation: The translation speed of protein is about 3-7aa / s. We also estimate the translation rate according to the length of gene. The translation speed of T7 RNase and T3 RNase are 0.005/s, that of OrtT-N with DnaE-N is 0.029/s, and that of OrT-N with DnaE-N is 0.067/s.</p>
+                            
+                            <b >Peptide splicing:</b>
+                            <p class="article_words">According to the known literature, the splicing rate of the peptide is 0.011/s, and the de splicing rate is 6.87×10^(-4)/s.</p>
+                            
+                            <b>Degradation: </b>
+                            <p class="article_words">Due to the high degradation rate of mRNA and relatively low degradation rate of protein, the roughly estimated degradation rate of mRNA and protein in the model is 0.002/s and 0.0001/s respectively.</p>
+                            <p class="article_words">Therefore, the whole metabolism process of Salmonella cells is as follows:</p>
+                            <p>$$\begin{align}
+                                \frac{{\large d} m_{T7RNase}}{d t}&=（L_{TRE}+\alpha_1） {\cdot} T7RNase_{gene} – d_{mT7} {\cdot} m_{T7RNase} \\
+                                \frac{{\large d} m_{T3RNase}}{d t} &=（L_{SPI-2}+\alpha_2） {\cdot} T3RNase_{gene} – d_{mT3} {\cdot} m_{T3RNase}\\
+                                \frac{{\large d}{T7RNase}}{d t}&=\beta_1 {\cdot} {m_{T7RNase}} - d_{T7RNase} {\cdot} {T7RNase}\\
+                                \frac{{\large d}{T3RNase}}{d t}&=\beta_2 {\cdot} {m_{T3RNase}} - d_{T3RNase} {\cdot} {T3RNase}\\
+                                \frac{{\large d} m_{OrtTN}}{d t}&=(L_{T7}+{\frac{\alpha_3}{1+({\frac{K_{d}}{T7RNase}})^{n}}}) {\cdot} OrtTN_{gene} - d_{mOrtTN}{\cdot}m_{OrtTN}\\
+                                \frac{{\large d} m_{OrtTC}}{d t}&=(L_{T3}+{\frac{\alpha_4}{1+({\frac{K_{d}}{T3RNase}})^{n}}}) {\cdot} OrtTC_{gene} - d_{mOrtTC}{\cdot}m_{OrtTC}\\
+                                \frac{{\large d} {OrtTN}}{d t}&=\beta_3 {\cdot} {m_{OrtTN}}-k_1{\cdot}{OrtTN}{\cdot}{OrtTC}+k_{-1}{\cdot}{OrtT} – d_{OrtTN}{\cdot}{OrtTN}\\
+                                \frac{{\large d} {OrtTC}}{d t}&=\beta_4 {\cdot} {m_{OrtTC}}-k_1{\cdot}{OrtTN}{\cdot}{OrtTC}+k_{-1}{\cdot}{OrtT} – d_{OrtTC}{\cdot}{OrtTC}\\
+                                \frac{{\large d} {OrtT}}{d t}&=k_1{\cdot}{OrtTN}{\cdot}{OrtTC} - k_{-1}{\cdot}{OrtT} – d_{OrtT}{\cdot}{OrtT}
+                                \end{align}$$</p>
+                            <p class="article_words">The simulation results of single copy plasmids are as follows:</p>
+                            <div class="pic_notes">
+                                <img src="image/Model1.png" />
+                                <p>pic2.Modelling Results</p>
+                            </div>
+                            <p class="article_words">As we can see from the figure, it takes a long time to reach the balance, at least 5 hours. At the same time, because the final product has a certain amount of expression in off state, the sensitivity of Salmonella itself to OrtT is also an important factor affecting the effectiveness of the system.</p>
+                            
+                            <b>Internal Parameters:</b>
+                            <div class="fig_notes">
+                                <p>Figure1.Internal paremeters</p>
+                                <table id='parameters'>
+                                <tr>
+                                    <th>name</th>
+                                    <th>value</th>
+                                    <th>unit</th>
+                                </tr>
+                                <tr>
+                                    <td>α<sub>1</sub></td>
+                                    <td>0.02</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>mT7</sub></td>
+                                    <td>0.002</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>L<sub>tTA</sub></td>
+                                    <td>3.077×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>β<sub>1</sub></td>
+                                    <td>0.005</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>d<sub>T7RNase</sub></td>
+                                    <td>0.0001</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>L<sub>T7</sub></td>
+                                    <td>3.077×10^(-5)</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+                                    <td>α<sub>2</sub></td>
+                                    <td>0.033</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+  <td>α<sub>_3</sub></td>
+  <td>0.083</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+  <td>K<sub>d</sub></td>
+  <td>3.7</td>
+  <td>1</td>
+</tr>
+                                <tr>
+  <td>n<sub></sub></td>
+  <td>1</td>
+  <td>1</td>
+</tr>
+                                <tr>
+  <td>d<sub>mOrtTN</sub></td>
+  <td>0.005</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+  <td>d<sub>mOrtTC</sub></td>
+  <td>0.005</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+  <td>β<sub>2</sub></td>
+  <td>0.029</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+  <td>β<sub>3</sub></td>
+  <td>0.067</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+  <td>k<sub>1</sub></td>
+  <td>0.011</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+  <td>k<sub>-1</sub></td>
+  <td>6.87×10^(-4)</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+                                    <td>d<sub>OrtTN</sub></td>
+                                    <td>0.0001</td>
+                                    <td>1/s</td>
+                                </tr>
+                                <tr>
+  <td>d<sub>OrtTC</sub></td>
+  <td>0.0001</td>
+  <td>1/s</td>
+</tr>
+                                <tr>
+  <td>d<sub>OrtT</sub></td>
+  <td>0.0001</td>
+  <td>1/s</td>
+</tr>
+                            </table>
+                            </div>
+
+                        </div>
+                        
+                        
+                            
+
+                        
+                        
+                        <div class="content" id="content4">
+                            <h1 class="Title">External</h1>
+                            <p class="article_words">In order to estimate the killing effect on Salmonella of our system, this model is used to simulate the number of Salmonella.</p>
+                            <p class="article_words">Salmonella itself grows logically, and has a certain rate of conjugation with E.coli at each time point. According to the known literature, the growth rate of Salmonella is 10 /day, the maximum population density in the gut of chicken is 10000, and the conjugation rate we used is 0.4 / (cell · h). </p>
+                            <p class="article_words">There are Cl and [Cl]<sub>2</sub> in the initial system, otherwise, part of the calculation will be meaningless. In the modeling, the cl content is 500, [Cl]<sub>2</sub> content is 615000.Therefore, the model is obtained: $\frac{{\large d}{N}}{d t}=r{\cdot}{N}{\cdot}(1+{\frac{N}{K}})-{Joi}{\cdot}{Kr}{\cdot}{N}$</p>
+                            <p class="article_words">The simulation result is as follows:</p>
+                            <div class="pic_notes">
+                                <img src="image/Model%202.png" />
+                                <p>pic3.The curve of the relation bewteen Salmonella's amount and time</p>
+                            </div>
+                            <p class="article_words">It can be seen from the figure that when the binding rate is 0.4, the killing rate can reach 90%.However, it takes at least 12 hours to reach the expected killing rate, and the time to reach the balance is relatively long.</p>
+                            <h2 class="S_title">External Parameters</h2>
+                            <div class="fig_notes">
+                                <p>Figure2. External parameters</p>
+                                <table>
+                                <tr>
+                                    <th>name</th>
+                                    <th>value</th>
+                                    <th>unit</th>
+                                </tr>
+                                <tr>
+                                    <td>r</td>
+                                    <td>1.157×10^(-4)</td>
+                                    <td>cells/s</td>
+                                </tr>
+                                <tr>
+                                    <td>K</td>
+                                    <td>10000</td>
+                                    <td>cell</td>
+                                </tr>
+                                <tr>
+                                    <td>J<sub>oi</sub></td>
+                                    <td>1.1112×10^(-4)</td>
+                                    <td>1/(cell·s)</td>
+                                </tr>
+                                <tr>
+                                    <td>Kr</td>
+                                    <td>0.999</td>
+                                    <td>1</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+           
+              </div>
+                <!-------------------------------------滑动栏--------------------------------------------------->
+                <div id="WP_nav">
+                    <ul>Winter Project
+                        <li><a href="#content1" id='n1'>Overview&emsp;&emsp;</a></li>
+                        <li><a href="#content2" id="n2">Internal</a></li>
+                        <li><a href="#content4" id="n4">External</a></li>
+                    </ul>
+                </div>
+                <!--------------------------------------项目各部分描述-------------------------------------------------------->
+                
+            </div>
+            <!-------------------------------------主要内容------------------------------------------->
+            
+             
+        </div>
+            <div class='footer' id='footer'>
+                <div id="Sponsors" >
+                       <img src="image/bqb/angry.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/ssfd.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/sos.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/nice.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/jiumi.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                       <img src="image/bqb/dldl.png" style="height: 50px" onclick="alert('nothing will happen')"/>
+                   </div>
+                   
+                   <div id='Contact'>
+                       <p>QQ Group Number:1001827182</p>
+                   </div>
+                   
+                   <div id="Copyright">
+                       <p>Copyright@ZJU_Mingxiao Wei's BIG BIG FATHER</p>
+                   </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+    </body>
+    
+    
+</html>
+
+
+<script type="text/javascript">
+    mounted () {
+    this.$nextTick(function() {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    });
+  }
+</script>
+
+<script>
+    function Control(sth){
+    obj=document.getElementById(sth);
+    if (obj.style.width=="0px"){
+        obj.style.width='950px';
+        setTimeout(function(){
+            document.getElementById('Home_nav').style.overflow="visible";
+        },2000);
+    } else {
+        obj.style.width='0px';
+        obj.style.overflow='hidden';
+    }
+}
+    window.onload=function(){
+        document.getElementById('Home_nav').style.width='0px';
+    }
+</script>
+
+<script>
+function test(){
+    alert(document.documentElement.scrollTop);
+    alert(document.getElementById('content1').scrollHeight);
+}
+$(document).ready(function() {
+//定义全局变量，获取附加导航栏、导航列表、链接、各楼层、各楼层距离文档的高度
+  var menu = $("#WP_nav"),
+    lists = menu.find("li"),
+    jumbotron = $(".Title"),
+    currentID;
+  $(window).scroll(function() {
+//获取文档滚动高度
+    var top = $(document).scrollTop();
+ 
+//遍历楼层
+    jumbotron.each(function() {
+        var $this = $(this),
+            jumbotronTop =$this.offset().top;//获取当前楼层的高度
+        if (top > (jumbotronTop - 200)) {
+            currentID = "#" +　$this.attr("id");//每个小于top的楼层都会赋值一次，逐层覆盖替换，最后一层才是最后的id值
+        }
+        else {
+            return false;
+        };
+    })
+//给相应楼层对应的附加到导航添加class
+        //首先清除所有active
+        var currentActive = menu.find(".active");
+        if (currentID && currentActive.find("a:eq(0)").attr("href") != currentID) {
+          currentActive.removeClass("active");
+ 
+        //给相应导航添加class
+          menu.find("[href="+currentID+"]").parent().addClass("active");
+        }
+  })
+ 
+});
+</script>

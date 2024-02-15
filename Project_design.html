@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>WP1 Design </title>
+    <title>WP1 Project Design</title>
+    <link href="css/Project_design.css" type="text/css" rel="stylesheet" />
+  </head>
+    
+    <!---------------------------------------------------------------------------->
+    <body>
+        <div id='main_container'>
+            
+            <div id="side">
+                <div id='main_nav'>
+                <ul class='Top_nav' id="Home_nav" >
+                
+                 <li class="NavButton" id='safety_button' >
+                     <a href="Safety_bio%20safety.html">Safety</a>
+                  </li>
+                    
+                 <li class='NavButton' id='HP_button' >
+                     <a>Human Practice</a>
+                     
+                     <div class="sub_nav" id='HP_nav'>
+                         <ul class="sub_menu" id='HP_menu'>
+                             <li><a href="HP_IntergratedHP.html">Intergrated Human Practice</a></li>
+                             <li><a href="HP_Edu&Pulic.html">Education & Public Engagement</a></li>
+                                 
+                         </ul>
+                     </div>
+                     
+                </li>
+                    
+                 <li class='NavButton' id='Parts_button'>
+                     <a>Parts</a>
+                     
+                     <div class="sub_nav" id='Parts_nav'>
+                         <ul class='sub_menu' id='Parts_menu'>
+                             <li><a href="Parts_Software.html">Software</a></li>
+                             <li><a href="Parts_Something%20else.html">Something else</a></li>
+                         </ul>
+                     </div>
+                     
+                </li>
+                    
+                 <li class='NavButton' id="Model_button" >
+                     <a>Model</a>
+                     
+                     <div class="sub_nav" id='Model_nav'>
+                         <ul class='sub_menu' id='Model_menu'>
+                             <li><a href="Model_WP.html">Winter Project</a></li>
+                             <li><a href="Model_university%20of%20leuven.html">Unversity of Leuven</a></li>
+                         </ul>
+                     </div>
+                     
+                </li>
+                 <li class='NavButton' id='Project_button' >
+                     <a>Project</a>
+                     
+                     <div class="sub_nav" id=Project_nav>
+                         <ul class='sub_menu' id='Project_menu'>
+                             <li><a href="Project_description.html">Description</a></li>
+                             <li><a href="Project_design.html">Design</a></li>
+                         </ul>
+                     </div>
+                     
+                    </li>
+                    
+                 <li class='NavButton' id='Team_button' >
+                     <a href="Team.html" target="_blank">Team</a>
+                     
+                       <div class="sub_nav" id="Team_nav">
+                         <ul class='sub_menu' id='Team_menu'>
+                             <li><a href="Team_members.html">Members</a></li>
+                             <li><a href="Team_attributions.html">Attribution</a></li>
+                         </ul>
+                       </div>
+                     
+                </li>
+                <li class='NavButton' ><a href="Home.html" target="_self">Home</a></li>
+            
+                </ul>
+                    <a><img src="image/nav_button.gif" id='nav_icon' align='left'  onclick="(Control('Home_nav'))"></a>
+                </div>
+                
+                <div id='side_logo'><img src="image/new_logo.png" id="logo"/>
+                </div>
+                
+                <div id='side_title'><p style="font-size: 85px; font-weight: 600; color: #d9d9d9; Writing-mode:tb-rl; padding: 0px;margin: 0px;">PROJECT</p></div>
+                
+            </div>
+                <!------------------------------------左侧固定栏----------------------------------------->
+                
+          <div class='main_content' id='Home_main_content'>
+                
+            <!--<div class='header' id='Home_header'>
+                    <div class='t1' id='t2' onclick="(dd(-1))"></div>
+                    <div class='t1' id='t3' onclick="(dd(1))"></div>
+                </div>--------->
+                <!------------------------------------主页图啥的---------------------------------------------->
+            
+                <div id='slide_content'>
+                    
+                    <div id='slide_container'>
+                        
+                        <div class='content' id='content1'>
+                            <h1 class='Title'>Overview</h1>
+                            <h2 class="S_title">Chassis</h2>
+                            <p class="article_words">The choice of E. Coli as the chassis organism is mainly considered that E. coli is the common chassis organism of the IGEM project, and the toxicity of Ortt toxin and the related verification experiment of its mechanism are also obtained through E. Coli, and E. Coli is naturally present in the gut of chickens, so feeding us the preparation does not change the ecology of the gut, and the objective rate of its association with the Salmonella to be killed is taken into account.</p>
+                            <h2 class="S_title">Bacterial Conjugation</h2>
+                            <p class="article_words">OrtT toxin is a special type of toxin in the V-TYPE TA system. Unlike the normal two-component TA system, Ortt is a toxin without antitoxin, which means that there is no toxic compound, which ensures that we kill Salmonella. Although it took longer (5 hours) to reach equilibrium, the model analysis showed that with a high copy of the Plasmid, the equilibrium produced 350000 toxins per plasmid, this means that it takes no time to reach equilibrium to produce enough of the toxin to break down the Salmonella Membrane, making killing feasible.</p>
+                            
+                            <h2 class="S_title">Genetic Circuit</h2>
+                            <p class="article_words">In order to reduce the microbiota dysbiosis and concomitant health sequelae, we tried to minimize the effect of the product on the gut flora of the chickens, so only salmonella resistant to tetracycline will be killed. Tetracycline-controlled transcriptional activation is a method of inducible gene expression, different transcription factors will conbine with the tetracycline response element(TRE) to express different genes.<sup>[1]</sup> Under the condition without tetracycline, transcription factor tTA will bind to the TRE. So we can use TRE and tTA to identify the presence of tetracycline resistance in salmonella.<sup>[2]</sup></p>
+                            <p class="article_words">After recognize the tetracycline resistance gene, we need to expression a large number of orphan toxin. T7 polymerase is extremely promoter-specific and transcribes only DNA downstream of a T7 promoter. <sup>[3]</sup>So we use TRE to specificity express T7 RNA polymerase and use T7 RNA polymerase to specificity express the N-terminal of OrtT.</p>
+                            <p class="article_words">In the same way, the T3 RNA polymerase is also a specificity RNA polymerase which  transcribes only DNA downstream of a T3 promoter. And SsrB is a specificity transcription factor which encodes the salmonella pathopoiesis island-2(SPI-2).<sup>[4]</sup> SPI-2 is salmonella specificity, so we can use SsrB to determine whether plasmids have been transferred into salmonella instead of other bacteria. With SsrB transcription factors bind to the SPI-2, the C terminal of OrtT will also be expressed. During processing, intein will be cut automatically and the overall length toxin OrtT will kill salmonella.</p>
+                            <p class="article_words">Since all of these components need to work in salmonella, plasmids are transferred from E. coli Nissle 1917 to salmonella by conjugation. Bacterial conjugation is the transfer of genetic material between bacterial cells by direct cell-to-cell contact or by a bridge-like connection between two cells,which takes place through a pilus.<sup>[5]</sup> Bacterial conjugation is controled by F factor on the plasmid. Scientists have shown that conjugation can occur in E. coli and salmonella, and that plasmids can be preserved efficiently in recipient bacteria.<sup>[6]</sup></p>
+                            <div class="pic_notes" id="pic1">
+                                <img src="image/E.coli.png" />
+                                <p class='notes'>Pic1.E.coli Genetic Cicuit</p>
+                            </div>
+                            <div class="pic_notes" id="pic2">
+                                <img src="image/Sal.png" />
+                                <p class='notes'>Pic2.Salmonella Genetic Cicuit</p>
+                            </div>
+                            
+                            <h2 class="S_Title">Feasibility</h2>
+                            <p class="article_words">How do we control the toxin's function in bacteria, or specifically, prevent it from killing the e. coli host and ensure that the toxin is expressed in the target salmonella? We designed a genetic module containing a toxin split by an intein. <sup>[7]</sup> Split inteins have been used in several biotechnological tools. We used the split-intein DnaE, which is present in the dnaE gene of Nostoc punctiforme. DnaE can be well characterized and has a high trans-splicing rate. <sup>[8]</sup> From the results of modeling, we can see that our peptide design can effectively and strictly control the production of toxins under the conditions of a certain conjugation rate between E. coli and Salmonella.</p>
+                            <div class="pic_notes">
+                                <img src="image/feasibility.png"  id='pic3'/>
+                                <p>pic3.Fesibility</p>
+                            </div>
+                            <p class="article_words">In terms of safety, on the one hand, we borrowed the ideas of previous iGEM projects, and realized the suicide switch by knocking out the can gene. In the intestinal tract, CO2 concentration was high enough (ranging from 5% to 29%) to spontaneously convert CO2 into bicarbonate ions. However, when E. coli is expelled from the body, a decrease in CO2 concentration can lead to death. <sup>[9]</sup> In addition, in order to avoid gene leakage caused by E. coli conjugating with other bacteria, we used the Cre-loxP system to delete our relevant genes in other bacterial cells, and ensured the specificity, efficiency, accuracy and rapidity of this process.</p>
+                        </div>
+                        
+                        <div class="content" id='content2'>
+                            <h1 class="Title">Killing Mechanism</h1>
+                            <h2 class="S_title">Orphan Toxin</h2>
+                            <div class="pic_notes" style="float: right" id="pic4">
+                                <img src="image/Toxin_results.png" />
+                                <p>pic4.Toxin Test Results</p>
+                            </div>
+                            <p class='article_words'>To be able to select the most suitable antibacterial substances, we conducted a wide range of bacterial toxins, toxins, and finally identified the toxin OrtT as our specific Salmonella killing toxin. OrtT is a toxin belonging to the v-type toxin-antitoxin system. When the bacteria are deprived of nutrients or the synthesis of THF is blocked, transcription factors e or h induced by ppGpp initiate transcription. By destroying the cell membrane and reducing the ATP level in the cell, the number of population is reduced, the cell metabolism is reduced and the bacterial tolerance is improved. Unlike the classic toxin-antitoxin, OrtT has no corresponding antitoxin, which means that once OrtT is expressed, the cell is killed. The related experiments showed that 99.99% of the cells of <em>E. coli</em> two hours after OrtT expression were lysed. Using high copy plasmids, the model analysis found, the balance could be reached in about three hours, and each bacterium could produce nearly 100000 toxin molecules.</p>
+                            
+                            <h2 class="S_title">Intein</h2>
+                            <p class="article_words">In order to specifically identify and kill tetracycline-resistant Salmonella, we have designed the gene circuit with the structure of and gate. The toxin gene was divided into n segment and C segment, and the two terminal sequences were inserted into the plasmid controlled by different promoters. The identification of bacterial species was realized by the SsrB transcription factor, and the expression of a plasmid was initiated The TTA transcription factor is used to identify tetracycline resistance gene and to initiate the expression of another plasmid. In order to allow the two toxin proteins to be linked after translation, we attached a peptide to the back end of the n segment and the front end of the C segment. An enpeptide is a segment of a protein that can cut itself off and join the rest of the exopeptide by a peptide bond. Integrins are also known as "Intein" . The results showed that the combination of toxin gene and endogenous peptide gene could improve the retention rate of toxin gene in plasmid. In this project, OrtT was co-expressed with the endogenous peptide Nostoc Punctiforme PCC73102 Npu DnaE. The apparent first-order rate constant s<sup>-1</sup> at 37 °C was determined by Npu DnaE, which is the highest rate of protein reaction reported so far.</p>
+                        </div>
+                        
+                        <div class="content" id="content3">
+                            <h1 class="Title">Biosafety</h1>
+                            <h2 class="S_title">Knoct-out Can Gene</h2>
+                            <p class="article_words">The can gene of E. coli encodes a β-class carbonic anhydrase (CA), an enzyme that assists rapid interconversion of CO<sub>2</sub> and water into carbonic acid, protons and bicarbonate ions. <em>E. coli</em> requires a constant supply of bicarbonate as a metabolic substrate during normal growth. So, if this gene is knocked out, <em>E. coli</em> is unable to turn the CO<sub>2</sub> into bicarbonate fast enough before the CO<sub>2</sub> diffuses out and cause cell death.</p>
+                            <p class="article_words"> Thereby, we decided to use the can gene as a kill switch. Inside the stomach, where we want the E. coli to survive, the CO<sub>2</sub> concentration is high enough to allow the spontaneous conversion of CO<sub>2</sub> into bicarbonate ions. However, when the <em>E. coli</em> exits the chicken body, the lowered concentration of CO<sub>2</sub> will result in its death.</p>
+                            <div class="pic_notes" id='pic5'>
+                                <img src="image/cangene_out.png" />
+                                <p>pic5.Can Gene</p>
+                            </div>
+                            <h2 class="S_title">Cre/Loop System</h2>
+                            <p class="article_words">To avoid gene leaks caused by <em>E. coli</em> conjugation with other bacteria, we use the Cre-loxP system to delete our related genes in other bacteria. The Cre recombinase (Cyclization Recombination Enzyme) is encoded by a gene of Escherichia coli bacteriophage P1 Cre, which has similar restriction enzyme capable of specifically recognizing loxP sites. The loxP (locus of X-overP1) locus is 34bp in length, including two 13bp inverted repeats and an 8bp spacer region. Wherein the inverted repeat is specific Cre recombinase recognition site, while the spacing region determines the direction of loxP sites. When the F factor-containing plasmid was transferred into other bacteria, the lack of the repressor protein Msx-1 caused the Cre recombinase to express, specifically recognized the loxp site and cut the sequence between the two LoxP sites to avoid gene leakage and ensure the specificity, efficiency, accuracy and speed of this process.</p>
+                            <div class="pic_notes" id="pic6">
+                                <img src="image/N%20R%20G.png" />
+                                <p>pic6.Cre/Loop System</p>
+                            </div>
+                        </div>
+                        
+                        <div class="content" id="content4">
+                            <h1 class="Title">Capsule Design</h1>
+                            <div class="pic_notes" id='pic7'>
+                                <img src="image/Capsule_Design.png" />
+                                <p>pic7.Capsule Design</p>
+                            </div>
+                            <p class="article_words">We hope that our engineered E. coli can maintain a high level of activity and play a stable role in the intestines of chickens. For practical convenience, we would like to deliver E. coli orally. Orally consumed E. coli face many obstacles until they reach the target intestinal tract. Among these, major obstacles are the low pH of the stomach, host immune system, and the competition with pathogenic and commensal microflora. In addition, E. coli Nissle1917 can survive only moderately at the low pH of the stomach and does not persist long in the gut.<sup>[10]</sup></p>
+                            
+                            <p class="article_words">These factors present challenges to oral administration. As a solution, we use microencapsulation technology to encapsulate E. coli in biological materials such as chitosan, sodium alginate and polysaccharide to improve the effectiveness and safety. <sup>[11]</sup> Alginate gels are known to be insoluble in acidic medium <sup>[12]</sup> and can pass through the stomach without being degraded. Chitosan can form a semi-permeable membrane around negatively charged polymers <sup>[13]</sup>, which is conducive to adhesion to intestinal cells.</p>
+                            
+                            <p class="article_words">Current studies have shown that the E.coli Nissle1917 was encapsulated in sodium alginate and chitosan nanoparticles, with microcapsules of sizes of 12~17μm and encapsulation rate of up to 90% under appropriate conditions, with E. coli release rate of 9.2×105 cell min-1. <sup>[14]</sup></p>
+                            <p class="article_words">In addition, we will also design the following experiments to refine our capsule design and test its effectiveness: </p>
+                            <ul>
+                                <li>(1)	microencapsulate our engineered E. coli inside alginate and chitosan nano particles;</li>
+                                <li>(2)	explore the optimal conditions for microencapsulation;</li>
+                                <li>(3)	assess the ability of microencapsulated E. coli to resist environmental stresses;</li>
+                                <li>(4)	evaluate its efficacy against Salmonella with tetracycline resistance under simulated intestinal conditions in vitro.</li>
+                            </ul>
+                            
+                            
+                        </div>
+                      
+                        <div class="content" id="content5">
+                            <h1 class="Title">Reference</h1>
+                            <ul>
+                                <li>[1]	Gossen M, Freundlieb S, Bender G, Müller G, Hillen W, Bujard H (June 1995). "Transcriptional activation by tetracyclines in mammalian cells". Science. 268 (5218): 1766–9. </li>
+                                <li>[2]	Plagge A . Directed mutagenesis in embryonic stem cells[J]. 2000.</li>
+                                <li>[3]	Rong M , He B , Mcallister W T , et al. Promoter specificity determinants of T7 RNA polymerase[J]. Proceedings of the National Academy of Sciences, 1998, 95(2):515-519.</li>
+                                <li>[4]	Deyanira Pérez-Morales, María M Banda, Chau N Y E , et al. The transcriptional regulator SsrB is involved in a molecular switch controlling virulence lifestyles of Salmonella[J]. PLoS Pathogens, 2017, 13(7):e1006497.</li>
+                                <li>[5]	Dr.T.S.Ramarao M.sc, Ph.D (1991). B.sc Botany-Volume-1.</li>
+                                <li>[6]	Bakkeren, E., Huisman, J.S., Fattinger, S.A. et al. Salmonella persisters promote the spread of antibiotic resistance plasmids in the gut. Nature 573, 276–280 (2019). </li>
+                                <li>[7] Alford SC, O'Sullivan C, Obst J, Christie J, Howard PL. Conditional protein splicing of α-sarcin in live cells. Molecular bioSystems. 2014;1(4):831-7.</li>
+                                <li>[8] Li Y. Split-inteins and their bioapplications. Biotechnology Letters. 2015;37(11):2121-37.</li>
+                                <li>[9] Merlin C, Masters M, McAteer S, Coulson A. Why Is Carbonic Anhydrase Essential to Escherichia coli? Journal of Bacteriology. 2003;185(21):6415-24.</li>
+                                <li>[10]	Joeres‐Nguyen‐Xuan TH, Boehm SK, Joeres L, Schulze J, Kruis W. Survival of the probiotic Escherichia coli Nissle 1917 (EcN) in the gastrointestinal tract given in combination with oral mesalamine to healthy volunteers. Inflammatory Bowel Diseases. 2010;16(2):256-62. </li>
+                                <li>[11]	Chávarri M, Marañón I, Ares R, Ibáñez FC, Marzo F, Villarán MdC. Microencapsulation of a probiotic and prebiotic in alginate-chitosan capsules improves survival in simulated gastro-intestinal conditions. International Journal of Food Microbiology. 2010;142(1):185-9. </li>
+                                <li>[12]	Lee KY, Mooney DJ. Alginate: Properties and biomedical applications. Progress in Polymer Science. 2012;37(1):106-26.</li>
+                                <li>[13]	Younes I, Rinaudo M. Chitin and chitosan preparation from marine sources. Structure, properties and applications. Marine Drugs. 2015;13(3):1133-74.</li>
+                                <li>[14] Mawad A, Helmy YA, Shalkami A, Kathayat D, Rajashekara G. E. coli Nissle microencapsulation in alginate-chitosan nanoparticles and its effect on Campylobacter jejuni in vitro. Applied Microbiology and Biotechnology. 2018;102(24):10675-90.</li>
+                               
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+
+              </div>
+                <!-------------------------------------滑动栏--------------------------------------------------->
+                <div id="Design_nav">
+                    <ul>Design
+                        <li><a href="#content1" id='n1'>Overview&emsp;&emsp;&emsp;&emsp;</a></li>
+                        <li><a href="#content2" id="n2">Killing Mechanism</a></li>
+                        <li><a href="#content3" id="n3">Bio Safety</a></li>
+                        <li><a href="#content4" id="n4">Capsule Design</a></li>
+                        <li><a href="#content5" id="n5">Reference</a></li>
+                    </ul>
+                </div>
+                <!--------------------------------------项目各部分描述-------------------------------------------------------->
+                
+            </div>
+            <!-------------------------------------主要内容------------------------------------------->
+            
+            <div class='footer' id='footer'>
+                <div id="Sponsors" >
+                       <img src="image/bqb/angry.png" style="height: 50px" />
+                       <img src="image/bqb/ssfd.png" style="height: 50px" />
+                       <img src="image/bqb/sos.png" style="height: 50px" />
+                       <img src="image/bqb/nice.png" style="height: 50px" />
+                       <img src="image/bqb/jiumi.png" style="height: 50px" />
+                       <img src="image/bqb/dldl.png" style="height: 50px" />
+                   </div>
+                   
+                   <div id='Contact'>
+                       <p>Contact</p>
+                   </div>
+                   
+                   <div id="Copyright">
+                       <p>Copyright@ZJU</p>
+                   </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+    </body>
+    
+    
+</html>
+
+
+<script type="text/javascript">
+    
+function Control(sth){
+    obj=document.getElementById(sth);
+    if (obj.style.width=="0px"){
+        obj.style.width='950px';
+        setTimeout(function(){
+            document.getElementById('Home_nav').style.overflow="visible";
+        },2000);
+    } else {
+        obj.style.width='0px';
+        obj.style.overflow='hidden';
+    }
+}
+window.onload=function(){
+        document.getElementById('Home_nav').style.width='0px';
+    }
+    
+</script>
