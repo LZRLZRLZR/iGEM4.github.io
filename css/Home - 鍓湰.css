@@ -1,0 +1,116 @@
+body{
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_nav{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+.Top_nav a{
+    height: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Top_nav a:link{
+    color: black;
+}
+
+.Top_nav a:hover{
+    color: #999999;
+}
+
+.sub_menu{
+    list-style-type: none;
+    background-color: whitesmoke;
+    border-color: dimgrey;
+    border-style:dotted;
+    border-width: thin;
+    text-align: left;
+    display: none;
+    position: absolute;
+    width: 110px;
+    padding-left: 0px;
+}
+
+.sub_menu a:hover{
+    background-color: #111111;
+    color: #eeeeee;
+}
+
+.sub_menu a:focus{
+    font-weight: 600;
+}
+
+#safety_menu{
+    right:0px;
+}
+
+#safety_button:hover #safety_menu{
+    display: block;
+}
+
+#HP_button:hover #HP_menu{
+    display: block;
+}
+
+#Parts_button:hover #Parts_menu{
+    display:block;
+}
+
+#Model_button:hover #Model_menu{
+    display: block;
+    width: auto;
+}
+
+#Project_button:hover #Project_menu{
+    display: block;
+}
+
+#Team_button:hover #Team_menu{
+    display: block;
+}
+
+#footer{
+    background-color: #111111;
+    margin-bottom: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height:130px;
+    padding-bottom: 0px;
+}
+#footer p{
+    margin: 5px;
+}
+
+#Sponsors{
+    text-align: center
+    
+}
+
+#Sponsors img{
+    margin-top:10px;
+    margin-left: 50px;
+}
+
+#Contact{
+    color: aliceblue;
+    text-align: center;
+    margin-top: px;
+    font-size: 20px;
+    border-style: none;
+}
+
+#Copyright{
+    color:aliceblue;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,184 @@
+body{
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+#tianchong{
+    height: 50px;
+}
+
+#main_nav{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+.Top_nav a{
+    height: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Top_nav a:link{
+    color: black;
+}
+
+.Top_nav a:hover{
+    color: #999999;
+}
+
+.sub_menu{
+    list-style-type: none;
+    background-color: whitesmoke;
+    border-color: dimgrey;
+    border-style:dotted;
+    border-width: thin;
+    text-align: left;
+    display: none;
+    position: absolute;
+    width: 110px;
+    padding-left: 0px;
+}
+
+.sub_menu a:hover{
+    background-color: #111111;
+    color: #eeeeee;
+}
+
+.sub_menu a:focus{
+    font-weight: 600;
+}
+
+#safety_menu{
+    right:0px;
+}
+
+#safety_button:hover #safety_menu{
+    display: block;
+}
+
+#HP_button:hover #HP_menu{
+    display: block;
+}
+
+#Parts_button:hover #Parts_menu{
+    display:block;
+}
+
+#Model_button:hover #Model_menu{
+    display: block;
+    width: auto;
+}
+
+#Project_button:hover #Project_menu{
+    display: block;
+}
+
+#Team_button:hover #Team_menu{
+    display: block;
+}
+
+#footer{
+    background-color: #111111;
+    margin-bottom: 0px;
+    bottom: 0px;
+    width: 100%;
+    height:130px;
+    padding-bottom: 0px;
+}
+#footer p{
+    margin: 5px;
+}
+
+#Sponsors{
+    text-align: center
+    
+}
+
+#Sponsors img{
+    margin-top:10px;
+    margin-left: 50px;
+}
+
+#Contact{
+    color: aliceblue;
+    text-align: center;
+    margin-top: px;
+    font-size: 20px;
+    border-style: none;
+}
+
+#Copyright{
+    color:aliceblue;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.side_nav{
+    max-width: 15%;
+    height: 100%;
+}
+
+#Project_nav{
+    list-style-type: none;
+    float: left;
+    font-size: 25px;
+}
+
+#Project_nav li{
+    padding-top: 10px;
+}
+
+#Project_nav a:link{
+    text-decoration: none;
+    color: #111111;
+}
+
+#Project_nav a:visited{
+    text-decoration: none;
+    color: #111111;
+}
+
+#Project_nav a:hover{
+    color: #888888;
+    font-weight: 550;
+}
+
+#Project_header{
+    width: 100%;
+    height: 600px;
+    border: #F00 soild 3px;
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+
+.BigTitle{
+    text-align: center;
+    font-size: 60px;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.PointTitle{
+        text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px;
+    width: 17%;
+    border-radius: 20px;
+    border: 4px solid #DCC;
+    background-color: antiquewhite;
+    margin-left: 17%;
+}
+
+.article{
+    font-size: 20px;
+    margin-left: 17%;
+    margin-right: 17%;
+    text-indent: 2em;
+}
